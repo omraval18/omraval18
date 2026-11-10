@@ -48,7 +48,7 @@ Smaller things I like: [nGen](https://github.com/omraval18/ngen) (AI music gener
 
 I'm a software engineer at **ztudio**, a development studio where I work on client AI and full-stack products and on our own agent tooling. Client details are under NDA, so this covers the problems and not the internals.
 
-**Stealth startup: 8-figure funding, founders with 8 and 9 figure exits**
+**Stealth startup: a US-based flood insurance firm**
 - Built the AI chat assistant at the core of the product: a retrieval-backed agent that answers from each customer's own documents and data, holds long conversations, and hands work off to the right tools.
 - Built the ingestion pipeline behind it. Users upload messy real-world files (images, PDFs), the pipeline parses them, fills structured fields, validates them against a schema and feeds both the chat and the knowledge base.
 - Built the knowledge-base services: retrieval, intent-aware routing, and gRPC and FastAPI services that the rest of the platform calls.
