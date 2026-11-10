@@ -48,11 +48,13 @@ Smaller things I like: [nGen](https://github.com/omraval18/ngen) (AI music gener
 
 I'm a software engineer at **ztudio**, a development studio where I work on client AI and full-stack products and on our own agent tooling. Client details are under NDA, so this covers the problems and not the internals.
 
-**Insurance platform (AskBrolly, now Waterbear.ai)**
-- Compliance flows differ by country, document type and entity type, so I built KYB/KYC agents that branch on those instead of one rigid form.
-- Built a retrieval-backed insurance agent for quotes, policy questions and claims intake, plus pipelines that read uploaded documents and fill in structured fields.
-- Led the security hardening for SOC 2 Type II readiness. A scan turned up tokens with unsigned fields that opened a privilege-escalation path, and I rebuilt them with full-payload signing before release.
-- Moved the Python backend services from EC2 to ECS Fargate as a parallel deployment, so there was no risky cutover. Fixed a service-to-service failure that only appeared inside the new mesh, and automated the deploy pipeline.
+**Stealth startup: 8-figure funding, founders with 8 and 9 figure exits**
+- Built the AI chat assistant at the core of the product: a retrieval-backed agent that answers from each customer's own documents and data, holds long conversations, and hands work off to the right tools.
+- Built the ingestion pipeline behind it. Users upload messy real-world files (images, PDFs), the pipeline parses them, fills structured fields, validates them against a schema and feeds both the chat and the knowledge base.
+- Built the knowledge-base services: retrieval, intent-aware routing, and gRPC and FastAPI services that the rest of the platform calls.
+- Built and ran the gRPC service layer, including background workers for enrichment, webhooks and user sync.
+- Did the AWS infrastructure work: moved the Python backend services from EC2 to ECS Fargate as a parallel deployment, so there was no risky cutover. Fixed a service-to-service failure that only appeared inside the new mesh, and automated deploys with CodePipeline.
+- Led security hardening for SOC 2 Type II readiness. A scan turned up tokens with unsigned fields that opened a privilege-escalation path, and I rebuilt them with full-payload signing before release.
 
 **Stablecoin business banking (Fondu)**
 - Added proof-of-personhood sign-in, fixed reliability problems in the transfer and smart-account layer, and worked inside a database setup that enforces row-level security.
