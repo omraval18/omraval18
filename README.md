@@ -49,19 +49,32 @@ Smaller things I like: [nGen](https://github.com/omraval18/ngen) (AI music gener
 I'm a software engineer at **ztudio**, a development studio where I work on client AI and full-stack products and on our own agent tooling. Client details are under NDA, so this covers the problems and not the internals.
 
 **Stealth startup: a US-based flood insurance firm, run by 8-figure exit founders**
+
+*AI product*
 - Built the AI chat assistant: retrieval over each customer's own documents and data, with long conversations and tool handoffs.
-- Built the ingestion pipeline: messy uploads in, validated structured data out, feeding the chat and the knowledge base.
-- Built the knowledge-base and gRPC service layer, with background workers for enrichment, webhooks and user sync.
-- Moved the backend from EC2 to ECS Fargate as a parallel deployment, so production never carried the risk.
-- Debugged a service-mesh failure where every config looked right and calls still failed, and fixed it at the root.
-- Automated deploys with CodePipeline under tight IAM boundaries.
-- Led the SOC 2 Type II push: found and closed a privilege-escalation path, and added fail-closed rate limiting.
+- Built the ingestion pipeline: messy uploads (images, PDFs) in, validated structured data out, feeding the chat and the knowledge base.
+- Built the knowledge-base services: retrieval and intent-aware routing.
+- Built the gRPC and FastAPI service layer, with background workers for enrichment, webhooks and user sync.
+
+*Infrastructure*
+- Moved the Python backend from hand-managed EC2 to ECS Fargate behind a service mesh.
+- Ran it as a parallel deployment, so the old servers stayed untouched and production never carried the risk.
+- Proved it with real business logic, not health checks: real lookups and a full quote generated through the mesh.
+- Debugged a failure where every config looked right and services still couldn't connect, and fixed it at the root with one setting.
+- Replaced a manual deploy routine with CodeBuild and CodePipeline, under IAM permission boundaries.
+- Audited the legacy AWS estate after the rebrand: orphaned domains, stuck certificates, dangling DNS records.
+- Kept secrets out of every command, log and output.
+
+*Security*
+- Led the SOC 2 Type II push, with repeated static scans across 70+ pattern families.
+- Found and closed a privilege-escalation path: tokens with unsigned fields, rebuilt with full-payload signing and constant-time checks.
+- Added fail-closed rate limiting on login, admin, impersonation and chat endpoints.
 
 **Fondu: stablecoin business banking**
-- Worked on a product that moves real money, from fiat rails to USDC and multisig treasuries.
-- Shipped proof-of-personhood sign-in to stop duplicate accounts.
-- Fixed reliability bugs in the transfer and smart-account layer.
-- Worked inside a strict database model with row-level security.
+- Worked on a product that moves real money: fiat rails in, USDC out, multisig smart-account treasuries.
+- Shipped proof-of-personhood sign-in so one person can't open many accounts.
+- Fixed reliability bugs in the transfer and smart-account layer, where a bug costs money.
+- Worked inside a strict database model: an admin role runs migrations, a restricted role runs the app, row-level security between them.
 
 **Internal agent platforms**
 - A self-hosted, multi-tenant agent platform where a team is the tenant boundary. Chats survive restarts and run unattended for long stretches, with isolated sandboxes for code execution.
