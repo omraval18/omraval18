@@ -42,7 +42,28 @@ A disk cleaner and health monitor on Zed's GPUI. An 18 MB binary that idles arou
 **[flow-record](https://github.com/omraval18/flow-record)** · Rust
 Record a terminal session once, replay it as a parameterized workflow. Project-aware and native to zsh.
 
-Smaller things I like: [mini-express](https://github.com/omraval18/mini-express), [ntypo](https://github.com/omraval18/ntypo), [nbot](https://github.com/omraval18/nbot).
+Smaller things I like: [nGen](https://github.com/omraval18/ngen) (AI music generation on serverless GPUs), [nClip](https://github.com/omraval18/nclip) (long video to short clips), [mini-express](https://github.com/omraval18/mini-express), [ntypo](https://github.com/omraval18/ntypo), [nbot](https://github.com/omraval18/nbot).
+
+## Work
+
+I'm a software engineer at **ztudio**, a development studio where I work on client AI and full-stack products and on our own agent tooling. Client details are under NDA, so this covers the problems and not the internals.
+
+**Insurance platform (AskBrolly, now Waterbear.ai)**
+- Compliance flows differ by country, document type and entity type, so I built KYB/KYC agents that branch on those instead of one rigid form.
+- Built a retrieval-backed insurance agent for quotes, policy questions and claims intake, plus pipelines that read uploaded documents and fill in structured fields.
+- Led the security hardening for SOC 2 Type II readiness. A scan turned up tokens with unsigned fields that opened a privilege-escalation path, and I rebuilt them with full-payload signing before release.
+- Moved the Python backend services from EC2 to ECS Fargate as a parallel deployment, so there was no risky cutover. Fixed a service-to-service failure that only appeared inside the new mesh, and automated the deploy pipeline.
+
+**Stablecoin business banking (Fondu)**
+- Added proof-of-personhood sign-in, fixed reliability problems in the transfer and smart-account layer, and worked inside a database setup that enforces row-level security.
+
+**Internal agent platforms**
+- A self-hosted, multi-tenant agent platform where a team is the tenant boundary. Chats survive restarts and run unattended for long stretches, with isolated sandboxes for code execution.
+- An org-wide agent app with roles, long-term memory, scheduled runs and connections to Slack, Notion, Linear and Sentry.
+
+**Before that**
+- **Travelarrow:** built the production iOS app and worked on the backend. Booking retries, queueing and optimistic locking to stop double bookings under concurrent requests.
+- **AllEvents:** front-end and platform work focused on page speed, organizer tools and email deliverability.
 
 ## What I'm exploring now
 
@@ -55,28 +76,14 @@ Mostly the layers most people never look under:
 
 I learn by building a small version of the thing and breaking it.
 
-## Stack
+## Tech I've worked with
 
-![Rust](https://img.shields.io/badge/rust-%23000000.svg?style=for-the-badge&logo=rust&logoColor=white)
-![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
-![Swift](https://img.shields.io/badge/swift-F54A2A?style=for-the-badge&logo=swift&logoColor=white)
-![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
-![Lua](https://img.shields.io/badge/lua-%232C2D72.svg?style=for-the-badge&logo=lua&logoColor=white)
-![Shell Script](https://img.shields.io/badge/shell_script-%23121011.svg?style=for-the-badge&logo=gnu-bash&logoColor=white)
-![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white)
-![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
-![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white)
-![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
-![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
-![Bun](https://img.shields.io/badge/bun-%23000000.svg?style=for-the-badge&logo=bun&logoColor=white)
-![Hono](https://img.shields.io/badge/hono-E36002?style=for-the-badge&logo=hono&logoColor=white)
-![Postgres](https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white)
-![SQLite](https://img.shields.io/badge/sqlite-%2307405e.svg?style=for-the-badge&logo=sqlite&logoColor=white)
-![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white)
-![Neovim](https://img.shields.io/badge/NeoVim-%2357A143.svg?style=for-the-badge&logo=neovim&logoColor=white)
-![Cloudflare](https://img.shields.io/badge/Cloudflare-F38020?style=for-the-badge&logo=Cloudflare&logoColor=white)
-![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white)
-![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white)
+- **Languages:** TypeScript, JavaScript, Python, Rust, Swift, SQL, Lua, shell, C++
+- **AI and agents:** LangGraph, LangChain, Gemini, OpenAI, RAG, MCP, Mem0, E2B sandboxes, multimodal inference, structured outputs
+- **Web and mobile:** React, Next.js, Hono, FastAPI, Fastify, Express, Vue, SwiftUI, Tailwind
+- **Data and messaging:** PostgreSQL, SQLite, MySQL, MongoDB, Redis, Kafka, BullMQ, Prisma, Drizzle
+- **Cloud and infra:** AWS (ECS Fargate, ALB, IAM, CodePipeline), Cloudflare, Docker, Modal, DigitalOcean, CI/CD
+- **Testing and tools:** Playwright, Vitest, GitHub Actions, Better Auth, gRPC, REST, GraphQL, WebSockets, Neovim
 
 ## Elsewhere
 
