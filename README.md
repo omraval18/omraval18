@@ -36,7 +36,7 @@ A disk cleaner and health monitor on Zed's GPUI. An 18 MB binary that idles arou
 **[flow-record](https://github.com/omraval18/flow-record)** · Rust
 Record a terminal session once, replay it as a parameterized workflow. Project-aware and native to zsh.
 
-Smaller things I like: [mini-express](https://github.com/omraval18/mini-express), [ntypo](https://github.com/omraval18/ntypo), [nbot](https://github.com/omraval18/nbot), [agent-browser-cloud](https://github.com/omraval18/agent-browser-cloud), [dotfiles](https://github.com/omraval18/dotfiles), [nvim-config](https://github.com/omraval18/nvim-config).
+Smaller things I like: [mini-express](https://github.com/omraval18/mini-express), [ntypo](https://github.com/omraval18/ntypo), [nbot](https://github.com/omraval18/nbot).
 
 ## What I'm exploring now
 
