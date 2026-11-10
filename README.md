@@ -24,6 +24,12 @@ A coding-agent harness for the terminal. One static binary, any model, profiles,
 **[blox](https://github.com/omraval18/blox)** · Swift
 A tiling window manager for macOS. Workspaces and keybindings in the AeroSpace style, borders and animation in the Hyprland style. About 0.4 MB, a TOML config, and no SIP changes needed.
 
+**nflows** · TypeScript (private for now)
+A durable workflow engine with a TypeScript SDK and a distributed worker runtime. Retry policies with backoff, task leases, dead-letter queues, idempotency keys, a full event history per run, and metrics. It's a study of the core ideas behind engines like Temporal, not a replacement for one.
+
+**ntrace** · TypeScript (private for now)
+A log aggregation and query engine. Logs go in through an API-key-protected endpoint, pass through Kafka to workers, land in Postgres, and get indexed in Redis for fast search and a live-tail stream. Malformed or failed messages go to a dead-letter topic instead of being dropped.
+
 **[nchat](https://github.com/omraval18/nchat)** · TypeScript
 Terminal messaging with real cryptography: X25519 key exchange, AES-256-GCM payloads, Argon2id password hashing, per-device identity keys with pinning and fingerprints. Messages are stored locally in SQLite, with Postgres behind the transport server.
 
