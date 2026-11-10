@@ -76,6 +76,8 @@ Mostly the layers most people never look under:
 
 I learn by building a small version of the thing and breaking it.
 
+I also share what I learn as short system design explainers on Instagram at [@bitofsys](https://www.instagram.com/bitofsys/). The idea is to make how real systems work easy to follow for anyone, not just people who already work in the field.
+
 ## Tech I've worked with
 
 - **Languages:** TypeScript, JavaScript, Python, Rust, Swift, SQL, Lua, shell, C++
@@ -94,4 +96,4 @@ I learn by building a small version of the thing and breaking it.
 
 ## Elsewhere
 
-[omraval.com](https://omraval.com) · [github.com/omraval18](https://github.com/omraval18)
+[omraval.com](https://omraval.com) · [github.com/omraval18](https://github.com/omraval18) · [@bitofsys](https://www.instagram.com/bitofsys/)
