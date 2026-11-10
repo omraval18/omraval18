@@ -1,27 +1,93 @@
-# 💫 About Me:
-🔭 I’m currently building react from scratch <br>🌱 I’m currently learning Javascript and Computers<br>💬 Ask me about Front-end and UI Design <br>⚡ I am trying to build stuff that I use daily like Shell, OS, Frameworks ,etc...
+<div align="center">
 
+# Om Raval
 
-# 💻 Tech Stack:
-![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white) ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![Solidity](https://img.shields.io/badge/Solidity-%23363636.svg?style=for-the-badge&logo=solidity&logoColor=white) ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white) ![Shell Script](https://img.shields.io/badge/shell_script-%23121011.svg?style=for-the-badge&logo=gnu-bash&logoColor=white) ![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white) ![Netlify](https://img.shields.io/badge/netlify-%23000000.svg?style=for-the-badge&logo=netlify&logoColor=#00C7B7) ![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white) ![NPM](https://img.shields.io/badge/NPM-%23000000.svg?style=for-the-badge&logo=npm&logoColor=white) ![Bootstrap](https://img.shields.io/badge/bootstrap-%23563D7C.svg?style=for-the-badge&logo=bootstrap&logoColor=white) ![JWT](https://img.shields.io/badge/JWT-black?style=for-the-badge&logo=JSON%20web%20tokens) ![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white) ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white) ![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB) ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) ![SASS](https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white) ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white) ![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white) ![Gimp Gnu Image Manipulation Program](https://img.shields.io/badge/Gimp-657D8B?style=for-the-badge&logo=gimp&logoColor=FFFFFF) ![Inkscape](https://img.shields.io/badge/Inkscape-e0e0e0?style=for-the-badge&logo=inkscape&logoColor=080A13) ![Canva](https://img.shields.io/badge/Canva-%2300C4CC.svg?style=for-the-badge&logo=Canva&logoColor=white) 	![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white) ![Babel](https://img.shields.io/badge/Babel-F9DC3e?style=for-the-badge&logo=babel&logoColor=black) ![Notion](https://img.shields.io/badge/Notion-%23000000.svg?style=for-the-badge&logo=notion&logoColor=white) ![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white) ![ESLint](https://img.shields.io/badge/ESLint-4B3263?style=for-the-badge&logo=eslint&logoColor=white)
-<!-- # 📊 GitHub Stats:
-![](https://github-readme-stats.vercel.app/api?username=omraval18&theme=dark&hide_border=false&include_all_commits=true&count_private=false)<br/>
-![](https://github-readme-streak-stats.herokuapp.com/?user=omraval18&theme=dark&hide_border=false)<br/>
-![](https://github-readme-stats.vercel.app/api/top-langs/?username=omraval18&theme=dark&hide_border=false&include_all_commits=true&count_private=false&layout=compact) -->
+**I build developer tools and the systems underneath them.**
 
----
-## 🏆 GitHub Trophies
-![](https://github-profile-trophy.vercel.app/?username=omraval18&theme=radical&no-frame=false&no-bg=false&margin-w=4)
+Ahmedabad, India · [omraval.live](https://omraval.live)
 
-### ✍️ Maybe Read The Quote
-![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical)
+</div>
 
 ---
-[![](https://visitcount.itsvg.in/api?id=omraval18&icon=5&color=11)](https://visitcount.itsvg.in)
 
+## What I do
 
+I like knowing how things work, so I tend to build them from scratch. An Express-style framework on Node's core modules. An S3-shaped blob store. An end-to-end encrypted chat. A tiling window manager in about 0.4 MB. A coding-agent harness that ships as one static binary.
 
+Most of it is Rust, TypeScript and Swift. I started in front-end and UI design, and I still can't ship something that feels wrong to use, however clean the internals are.
 
+## Projects I'm proudest of
 
+**[rig](https://github.com/omraval18/rig)** · Rust
+A coding-agent harness for the terminal. One static binary, any model, profiles, and autonomy levels so you decide how much the agent may do without asking. I built it because I wanted an agent I could read end to end.
 
+**[blox](https://github.com/omraval18/blox)** · Swift
+A tiling window manager for macOS. Workspaces and keybindings in the AeroSpace style, borders and animation in the Hyprland style. About 0.4 MB, a TOML config, and no SIP changes needed.
 
+**[nchat](https://github.com/omraval18/nchat)** · TypeScript
+Terminal messaging with real cryptography: X25519 key exchange, AES-256-GCM payloads, Argon2id password hashing, per-device identity keys with pinning and fingerprints. Messages are stored locally in SQLite, with Postgres behind the transport server.
+
+**[n3](https://github.com/omraval18/n3)** · TypeScript
+S3-shaped blob storage: a versioned REST API, a Hono gateway with API-key auth, a session-based dashboard, a pluggable storage adapter and a typed SDK.
+
+**[prunemymac](https://github.com/omraval18/prunemymac)** · Rust
+A disk cleaner and health monitor on Zed's GPUI. An 18 MB binary that idles around 75 MB of RAM.
+
+**[flow-record](https://github.com/omraval18/flow-record)** · Rust
+Record a terminal session once, replay it as a parameterized workflow. Project-aware and native to zsh.
+
+**[1piece](https://github.com/omraval18/1piece)** · TypeScript
+Ask "will this part work with that one?" in plain English. It finds the real spec pages, scrapes them and answers yes, no or conditional, with citations instead of guesses. Built for a hackathon.
+
+Smaller things I like: [mini-express](https://github.com/omraval18/mini-express), [ntypo](https://github.com/omraval18/ntypo), [nbot](https://github.com/omraval18/nbot), [agent-browser-cloud](https://github.com/omraval18/agent-browser-cloud), [dotfiles](https://github.com/omraval18/dotfiles), [nvim-config](https://github.com/omraval18/nvim-config).
+
+## What I'm exploring now
+
+Mostly the layers most people never look under:
+
+- **Databases.** How storage engines lay data out, how a query planner picks a plan, what a write-ahead log buys you.
+- **Operating systems.** Scheduling, memory, processes, and what a window manager or a shell actually asks the kernel for.
+- **Networks.** What happens between `connect()` and the first byte, and why it's slow when it is.
+- **AI systems.** Agent harnesses, tool use, context handling, and the plumbing that makes a model usable in a real workflow.
+
+I learn by building a small version of the thing and breaking it.
+
+## Stack
+
+![Rust](https://img.shields.io/badge/rust-%23000000.svg?style=for-the-badge&logo=rust&logoColor=white)
+![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
+![Swift](https://img.shields.io/badge/swift-F54A2A?style=for-the-badge&logo=swift&logoColor=white)
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+![Lua](https://img.shields.io/badge/lua-%232C2D72.svg?style=for-the-badge&logo=lua&logoColor=white)
+![Shell Script](https://img.shields.io/badge/shell_script-%23121011.svg?style=for-the-badge&logo=gnu-bash&logoColor=white)
+![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white)
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
+![Bun](https://img.shields.io/badge/bun-%23000000.svg?style=for-the-badge&logo=bun&logoColor=white)
+![Hono](https://img.shields.io/badge/hono-E36002?style=for-the-badge&logo=hono&logoColor=white)
+![Postgres](https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white)
+![SQLite](https://img.shields.io/badge/sqlite-%2307405e.svg?style=for-the-badge&logo=sqlite&logoColor=white)
+![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white)
+![Neovim](https://img.shields.io/badge/NeoVim-%2357A143.svg?style=for-the-badge&logo=neovim&logoColor=white)
+![Cloudflare](https://img.shields.io/badge/Cloudflare-F38020?style=for-the-badge&logo=Cloudflare&logoColor=white)
+![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white)
+![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white)
+
+## Stats
+
+<div align="center">
+
+![GitHub stats](https://github-readme-stats.vercel.app/api?username=omraval18&show_icons=true&theme=radical&hide_border=true&include_all_commits=true)
+![Top languages](https://github-readme-stats.vercel.app/api/top-langs/?username=omraval18&theme=radical&hide_border=true&layout=compact)
+
+</div>
+
+## Elsewhere
+
+[omraval.live](https://omraval.live) · [github.com/omraval18](https://github.com/omraval18)
+
+---
+
+<sub>The previous version of this README is kept in [archive/README.previous.md](archive/README.previous.md).</sub>
