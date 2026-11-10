@@ -79,7 +79,7 @@ I learn by building a small version of the thing and breaking it.
 ## Tech I've worked with
 
 - **Languages:** TypeScript, JavaScript, Python, Rust, Swift, SQL, Lua, shell, C++
-- **AI and agents:** LangGraph, LangChain, Gemini, OpenAI, RAG, MCP, Mem0, E2B sandboxes, multimodal inference, structured outputs
+- **AI and agents:** Claude Code, Cursor, Codex, cloud agents, OpenClaw, Grokbot, MCP, skills, ACP, RAG, LangGraph, LangChain, Vercel AI SDK, sandboxes (E2B), Mem0, Gemini, OpenAI, multimodal inference, structured outputs
 - **Web and mobile:** React, Next.js, Hono, FastAPI, Fastify, Express, Vue, SwiftUI, Tailwind
 - **Data and messaging:** PostgreSQL, SQLite, MySQL, MongoDB, Redis, Kafka, BullMQ, Prisma, Drizzle
 - **Cloud and infra:** AWS (ECS Fargate, ALB, IAM, CodePipeline), Cloudflare, Docker, Modal, DigitalOcean, CI/CD
