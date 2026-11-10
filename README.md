@@ -50,39 +50,39 @@ I'm a software engineer at **ztudio**, a development studio where I work on clie
 
 **Stealth startup: a US-based flood insurance firm, run by 8-figure exit founders**
 
-*AI product*
-- Built the AI chat assistant: retrieval over each customer's own documents and data, with long conversations and tool handoffs.
-- Built the ingestion pipeline: messy uploads (images, PDFs) in, validated structured data out, feeding the chat and the knowledge base.
-- Built the knowledge-base services: retrieval and intent-aware routing.
-- Built the gRPC and FastAPI service layer, with background workers for enrichment, webhooks and user sync.
+*AI platform*
+- Designed and shipped the conversational agent: RAG over tenant-scoped documents and records, multi-turn state, and tool-calling handoffs into transactional services.
+- Built the document ingestion pipeline: multimodal parsing (images, PDFs), schema-enforced extraction into structured records, and downstream fan-out to the agent and the knowledge base.
+- Owned the knowledge-base layer: retrieval, intent classification and routing across sources.
+- Built the gRPC and FastAPI service tier, plus async workers for property enrichment, HMAC-verified webhook ingestion and user provisioning.
 
-*Infrastructure*
-- Moved the Python backend from hand-managed EC2 to ECS Fargate behind a service mesh.
-- Ran it as a parallel deployment, so the old servers stayed untouched and production never carried the risk.
-- Proved it with real business logic, not health checks: real lookups and a full quote generated through the mesh.
-- Debugged a failure where every config looked right and services still couldn't connect, and fixed it at the root with one setting.
-- Replaced a manual deploy routine with CodeBuild and CodePipeline, under IAM permission boundaries.
-- Audited the legacy AWS estate after the rebrand: orphaned domains, stuck certificates, dangling DNS records.
-- Kept secrets out of every command, log and output.
+*Cloud infrastructure*
+- Led the migration of the Python gRPC services from hand-managed EC2 to ECS Fargate behind an Envoy-based service mesh (ECS Service Connect).
+- Ran old and new stacks side by side with no production cutover, then validated the mesh with real end-to-end transactions (live pricing and quote generation), not synthetic health probes.
+- Root-caused a mesh-only failure: the gRPC client's c-ares resolver bypassed the sidecar's DNS interception, so service names never resolved. Fixed it by switching the caller to the native resolver.
+- Replaced manual image build and task-definition rollout with a CodeBuild and CodePipeline CI/CD path, scoped with IAM permission boundaries so delegated roles can't escalate.
+- Audited and decommissioned legacy DNS, ACM and Amplify resources after the rebrand, without touching anything live.
+- Enforced secret hygiene across the migration: no credential ever surfaced in commands, logs or output.
 
-*Security*
-- Led the SOC 2 Type II push, with repeated static scans across 70+ pattern families.
-- Found and closed a privilege-escalation path: tokens with unsigned fields, rebuilt with full-payload signing and constant-time checks.
-- Added fail-closed rate limiting on login, admin, impersonation and chat endpoints.
+*Security and compliance*
+- Led application-security hardening toward SOC 2 Type II: repeated SAST sweeps across 70+ vulnerability pattern families (authz bypass, XSS, SSRF, secrets exposure).
+- Found and closed a token-forgery path that led to privilege escalation. Rebuilt signup, bootstrap and impersonation tokens with full-payload HMAC-SHA256 signing and constant-time verification.
+- Added fail-closed, Redis-backed rate limiting on authentication, admin, impersonation and chat surfaces.
 
 **Fondu: stablecoin business banking**
-- Worked on a product that moves real money: fiat rails in, USDC out, multisig smart-account treasuries.
-- Shipped proof-of-personhood sign-in so one person can't open many accounts.
-- Fixed reliability bugs in the transfer and smart-account layer, where a bug costs money.
-- Worked inside a strict database model: an admin role runs migrations, a restricted role runs the app, row-level security between them.
+- Engineered on a regulated money-movement stack: fiat on-ramps to USDC via Bridge, with ERC-4337 smart-account multisig treasuries on Safe.
+- Implemented World ID proof-of-personhood for Sybil-resistant onboarding.
+- Hardened the transfer and smart-account integration layer, where correctness failures are financial, for ACH and wire to USDC flows.
+- Worked under a split-privilege Postgres model: a DDL-only migration role, a least-privilege runtime role and row-level security enforced at the database boundary.
 
 **Internal agent platforms**
-- A self-hosted, multi-tenant agent platform where a team is the tenant boundary. Chats survive restarts and run unattended for long stretches, with isolated sandboxes for code execution.
-- An org-wide agent app with roles, long-term memory, scheduled runs and connections to Slack, Notion, Linear and Sentry.
+- Built a multi-tenant agent platform with the team as the isolation boundary: durable execution on Postgres-backed LangGraph checkpointing, so runs survive restarts and execute unattended.
+- Used per-thread sandboxed execution (E2B), runtime-composed team and personal skills, and one orchestration path shared by interactive, scheduled and channel-triggered runs.
+- Built an org-wide agent application with RBAC, long-term memory, cron-scheduled runs and MCP integrations with Slack, Notion, Linear and Sentry.
 
 **Before that**
-- **Travelarrow:** built the production iOS app and worked on the backend. Booking retries, queueing and optimistic locking to stop double bookings under concurrent requests.
-- **AllEvents:** front-end and platform work focused on page speed, organizer tools and email deliverability.
+- **Travelarrow:** shipped a production iOS client (Swift, SwiftUI) and backend services for hotel booking. Built retry and backoff, queueing and concurrency control, and used optimistic locking to prevent double-booking under concurrent multi-room reservations.
+- **AllEvents:** front-end and platform engineering: page-performance work, organizer tooling and cross-client email deliverability.
 
 ## What I'm exploring now
 
