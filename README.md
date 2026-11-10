@@ -79,7 +79,14 @@ I learn by building a small version of the thing and breaking it.
 ## Tech I've worked with
 
 - **Languages:** TypeScript, JavaScript, Python, Rust, Swift, SQL, Lua, shell, C++
-- **AI and agents:** Claude Code, Cursor, Codex, cloud agents, OpenClaw, Grokbot, MCP, skills, ACP, RAG, LangGraph, LangChain, Vercel AI SDK, sandboxes (E2B), Mem0, Gemini, OpenAI, multimodal inference, structured outputs
+- **AI**
+  - *Coding agents:* Claude Code, Cursor, Codex, cloud agents, OpenClaw, Grokbot
+  - *Agent building:* LangGraph, LangChain, Vercel AI SDK, MCP, ACP, skills, tool calling, harness design, long-running and resumable agent runs
+  - *Retrieval and memory:* RAG, Gemini File Search, Mem0, document parsing with structured outputs
+  - *Models and providers:* Claude, GPT, Gemini, Qwen, OpenRouter, plus open models I ran myself
+  - *Multimodal:* ACE-Step (music), Kokoro (TTS), SDXL Turbo (images), WhisperX (speech to text), active-speaker detection
+  - *Infra:* sandboxed code execution (E2B), serverless GPUs (Modal), inference tuning (bfloat16, CPU offload)
+  - *Quality and tracing:* Langfuse, OpenTelemetry, Playwright and Midscene end-to-end tests for AI flows
 - **Web and mobile:** React, Next.js, Hono, FastAPI, Fastify, Express, Vue, SwiftUI, Tailwind
 - **Data and messaging:** PostgreSQL, SQLite, MySQL, MongoDB, Redis, Kafka, BullMQ, Prisma, Drizzle
 - **Cloud and infra:** AWS (ECS Fargate, ALB, IAM, CodePipeline), Cloudflare, Docker, Modal, DigitalOcean, CI/CD
