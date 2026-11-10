@@ -49,15 +49,30 @@ Smaller things I like: [nGen](https://github.com/omraval18/ngen) (AI music gener
 I'm a software engineer at **ztudio**, a development studio where I work on client AI and full-stack products and on our own agent tooling. Client details are under NDA, so this covers the problems and not the internals.
 
 **Stealth startup: a US-based flood insurance firm, run by 8-figure exit founders**
-- Built the AI chat assistant at the core of the product: a retrieval-backed agent that answers from each customer's own documents and data, holds long conversations, and hands work off to the right tools.
-- Built the ingestion pipeline behind it. Users upload messy real-world files (images, PDFs), the pipeline parses them, fills structured fields, validates them against a schema and feeds both the chat and the knowledge base.
-- Built the knowledge-base services: retrieval, intent-aware routing, and gRPC and FastAPI services that the rest of the platform calls.
-- Built and ran the gRPC service layer, including background workers for enrichment, webhooks and user sync.
-- Did the AWS infrastructure work: moved the Python backend services from EC2 to ECS Fargate as a parallel deployment, so there was no risky cutover. Fixed a service-to-service failure that only appeared inside the new mesh, and automated deploys with CodePipeline.
-- Led security hardening for SOC 2 Type II readiness. A scan turned up tokens with unsigned fields that opened a privilege-escalation path, and I rebuilt them with full-payload signing before release.
 
-**Stablecoin business banking (Fondu)**
-- Added proof-of-personhood sign-in, fixed reliability problems in the transfer and smart-account layer, and worked inside a database setup that enforces row-level security.
+*The AI product*
+- Built the AI chat assistant at the core of the product: a retrieval-backed agent that answers from each customer's own documents and data, holds long conversations, and hands work off to the right tools.
+- Built the ingestion pipeline behind it. Users upload messy real-world files (images, PDFs), and the pipeline parses them, fills structured fields, validates them against a schema and feeds both the chat and the knowledge base.
+- Built the knowledge-base services: retrieval, intent-aware routing, and the gRPC and FastAPI services the rest of the platform calls.
+- Built and ran the gRPC service layer, including the background workers for enrichment, webhooks and user sync.
+
+*Infrastructure*
+- Took the Python backend off hand-managed EC2 boxes and onto ECS Fargate behind a service mesh. I ran it as a parallel deployment, so the old servers stayed untouched and production never carried the risk.
+- Proved the new setup with real business logic, not health checks: real lookups against the user service and a full quote generated end to end through the mesh.
+- Hit a failure where services could reach each other on paper but not in practice. Every config looked correct. I traced it down to the gRPC client resolving names in a way the mesh never saw, and fixed it with one environment setting on the calling side.
+- Replaced a manual build-push-register routine with a CodeBuild and CodePipeline deploy path, under IAM permission boundaries so the roles it created could never grant more than they should.
+- Audited the legacy AWS estate after the rebrand and separated what was live from what was safe to remove: orphaned domain associations, certificates stuck in validation, dangling DNS records.
+- Kept secrets out of every command, log and output while doing all of it.
+
+*Security*
+- Led the push toward SOC 2 Type II. Ran repeated full-repo static scans across more than 70 pattern families, and found tokens with unsigned fields that opened a privilege-escalation path. I rebuilt them with full-payload signing and constant-time checks before release.
+- Added fail-closed rate limiting across login, admin bootstrap, impersonation and chat endpoints.
+
+**Fondu: stablecoin business banking**
+- Worked on a product that moves real money: fiat rails in, USDC out, multisig smart-account treasuries on the other side.
+- Shipped proof-of-personhood sign-in so one person can't spin up many accounts.
+- Tracked down and fixed reliability problems in the transfer and smart-account layer, the part of the system where a bug costs money, not just a bad screen.
+- Worked inside a strict database model where an admin role runs migrations and a restricted role runs the app, with row-level security enforced between them.
 
 **Internal agent platforms**
 - A self-hosted, multi-tenant agent platform where a team is the tenant boundary. Chats survive restarts and run unattended for long stretches, with isolated sandboxes for code execution.
