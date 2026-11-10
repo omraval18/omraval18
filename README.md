@@ -4,7 +4,7 @@
 
 **I build developer tools and the systems underneath them.**
 
-Ahmedabad, India · [omraval.live](https://omraval.live)
+Ahmedabad, India · [omraval.com](https://omraval.com)
 
 </div>
 
@@ -78,19 +78,6 @@ I learn by building a small version of the thing and breaking it.
 ![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white)
 ![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white)
 
-## Stats
-
-<div align="center">
-
-![GitHub stats](https://github-readme-stats.vercel.app/api?username=omraval18&show_icons=true&theme=radical&hide_border=true&include_all_commits=true)
-![Top languages](https://github-readme-stats.vercel.app/api/top-langs/?username=omraval18&theme=radical&hide_border=true&layout=compact)
-
-</div>
-
 ## Elsewhere
 
-[omraval.live](https://omraval.live) · [github.com/omraval18](https://github.com/omraval18)
-
----
-
-<sub>The previous version of this README is kept in [archive/README.previous.md](archive/README.previous.md).</sub>
+[omraval.com](https://omraval.com) · [github.com/omraval18](https://github.com/omraval18)
