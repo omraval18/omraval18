@@ -36,9 +36,6 @@ A disk cleaner and health monitor on Zed's GPUI. An 18 MB binary that idles arou
 **[flow-record](https://github.com/omraval18/flow-record)** · Rust
 Record a terminal session once, replay it as a parameterized workflow. Project-aware and native to zsh.
 
-**[1piece](https://github.com/omraval18/1piece)** · TypeScript
-Ask "will this part work with that one?" in plain English. It finds the real spec pages, scrapes them and answers yes, no or conditional, with citations instead of guesses. Built for a hackathon.
-
 Smaller things I like: [mini-express](https://github.com/omraval18/mini-express), [ntypo](https://github.com/omraval18/ntypo), [nbot](https://github.com/omraval18/nbot), [agent-browser-cloud](https://github.com/omraval18/agent-browser-cloud), [dotfiles](https://github.com/omraval18/dotfiles), [nvim-config](https://github.com/omraval18/nvim-config).
 
 ## What I'm exploring now
